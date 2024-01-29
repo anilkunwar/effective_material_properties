@@ -1,4 +1,4 @@
-# Ti6Al4V Alloy
+# Ti6Al4V ALLOY
 
 The Ti6Al4V material is assumed as a continuum material with zero porosity
 
