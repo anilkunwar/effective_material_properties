@@ -25,7 +25,7 @@ If the above conditions are not met, it calculates the effective thermal conduct
 
 effcondt = (1 - porosity) * (α_s * (tscaler * temp)^3 + β_s * (tscaler * temp)^2 + δ_s * (tscaler * temp)) + porosity * (α_g * (tscaler * temp)^2 + β_g * tscaler * temp)
 
-*a. Density:*
+*b. Density:*
 
 Liquid State:
 
