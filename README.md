@@ -9,5 +9,13 @@
   Liquid State:
   
 If the reference melting temperature (refMeltTemp) is less than or equal to the current temperature (temp), it considers the material to be in a liquid state and calculates the effective thermal conductivity based on a model:
+
 effcondt = α_l * (tscaler * temp)^3 + β_l * (tscaler * temp)^2 + δ_l * (tscaler * temp)
+
+Sintering State:
+
+If the reference melting temperature is greater than the current temperature (temp) and the reference sintering temperature (refStTemp) is less than the current temperature, it considers the material to be in a sintering state. It calculates the effective thermal conductivity based on a sintering model:
+
+effcondt = ((α_bulk - kthpowder) * (temp - refStTemp)) / (refMeltTemp - refStTemp) + kthpowder
+
 
