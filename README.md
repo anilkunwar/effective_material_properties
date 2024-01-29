@@ -4,7 +4,7 @@
 # Cu MATERIAL
   The Cu material is assumed to be a part of a porous layer with initial porosity of 0.45, and this porosity value is temperature dependent.
   
-  Conductivity:
+ *a. Conductivity:*
   
   Liquid State:
   
