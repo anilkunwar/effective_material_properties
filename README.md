@@ -18,4 +18,10 @@ If the reference melting temperature is greater than the current temperature (te
 
 effcondt = ((α_bulk - kthpowder) * (temp - refStTemp)) / (refMeltTemp - refStTemp) + kthpowder
 
+Other States:
+If the above conditions are not met, it calculates the effective thermal conductivity based on a default model:
+
+effcondt = (1 - porosity) * (α_s * (tscaler * temp)^3 + β_s * (tscaler * temp)^2 + δ_s * (tscaler * temp)) + porosity * (α_g * (tscaler * temp)^2 + β_g * tscaler * temp)
+
+
 
