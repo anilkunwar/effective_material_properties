@@ -76,7 +76,7 @@ def main():
     #ax.set_title('Density vs Temperature')
     ax.legend(fontsize='large', loc='lower right')  # Adjust fontsize and loc here
     ax.set_yscale('log')
-    ax.yaxis.set_minor_locator(LogLocator(base=10.0, subs=np.arange(0.1, 1, 0.1)))
+    #ax.yaxis.set_minor_locator(LogLocator(base=10.0, subs=np.arange(0.1, 1, 0.1)))
     #ax.yaxis.set_minor_locator(LogLocator(base=10.0, subs=np.arange(2, 10)))
     #ax.yaxis.set_minor_formatter(plt.NullFormatter())
     # Add subticks manually
