@@ -8,6 +8,11 @@
     ! (kth_air)gas = Agas*T^2 + Bgas*T    where Agas = 0.00012 W/mK3  and  Bgas=  -0.001557 W/mK2 (250.0 < T < 1358.0 K) 
     ! Reference for (kth_air)gas: C.Y. Ho, R. W. Powell and P. E. Liley, Thermal Conductivity of the Elements: A Comprehensive Review,  Journal of Physical and Chemical Reference Data
     ! Volume 3 (1974) 1-756
+    ! The following function yields better result for thermal conductivity of air
+    ! (kth)_air = Agas*T + Cgas , where Agas = 1.7082E-4 W/(m  K2) and Cgas = -7.488E-3 W/m K
+    ! This function is adapted from the expression ((kth)_air = Agas*T + Bgas*T**2 + Dgas*T**3 + Egas*T**4 + Fgas*T**5+ Cgas ) provided in the following reference
+    ! https://www.cambridge.org/core/books/abs/gas-turbines/equations-of-air-thermophysical-properties/9572106E068EFF1B7C0896124C17A196
+    ! It means a value of 0 has been put in Bgas, Dgas, Egas and Fgas to enable thermal conducitivity to be well around the order of 10^{-2} for given temperature range
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     !  Initial porosity (porosity) = 0.45
     ! Conductivity of bulk liquid copper fitted as a function of temperature 
@@ -151,7 +156,8 @@
     ELSE IF (refMeltTemp > temp .AND. refStTemp < temp) THEN
        CALL Warn('getCuConductivity', 'The Cu material is being sintered.')
     kthbulk = alphas*(tscaler*temp)**3 + betas*(tscaler*temp)**2 + deltas*(tscaler*temp)
-    kthgas = alphag*(tscaler*temp)**2 + betag*(tscaler*temp) 
+    !kthgas = alphag*(tscaler*temp)**2 + betag*(tscaler*temp) 
+    kthgas = alphag*(tscaler*temp)  + betag 
     kthpowder = (1-porosity)*kthbulk + porosity*kthgas
     effcondt = ((kthbulk - kthpowder)*(temp-refStTemp))/(refMeltTemp-refStTemp)+kthpowder
     ELSE
