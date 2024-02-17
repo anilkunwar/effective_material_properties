@@ -41,7 +41,7 @@ def main():
 
         st.text("")
         st.text(f"Fitted Equation of Density for {phase_name}:")
-        st.latex(rf"\rho_{{{phase_name}}} = {A} \cdot (T - {Tref}) + {B} \cdot (T - {Tref})^2 + {C} \cdot (T - {Tref})^3 + {D} \cdot \ln({E} \cdot (T - {Tref}) + {F})")
+        st.latex(rf"\rho_{{{phase_name}}} = {A} \cdot (T - {Tref}) + {B} \cdot (T - {Tref})^2 + {C} \cdot (T - {Tref})^3 + {D} \cdot \ln({E} \cdot (T - {Tref})) + {F})")
     
     ax.set_xlabel('Temperature (K)', fontsize=20) #14
     ax.set_ylabel('Density (kg/m$^3$)', fontsize=20) #14
