@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def generic_density(T, A, B, C, D, E, F, Tref, Tmin, Tmax):
-    rho = A * (T - Tref) + B * (T - Tref)**2 + C * (T - Tref)**3 + D * np.log(E * (T - Tref) + F)
+    rho = A * (T - Tref) + B * (T - Tref)**2 + C * (T - Tref)**3 + D * np.log(E * (T - Tref)) + F)
     return rho if Tmin <= T <= Tmax else np.nan
 
 def main():
