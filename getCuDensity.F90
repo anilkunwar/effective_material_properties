@@ -8,7 +8,7 @@
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     !  Initial porosity (porosity) = 0.45
     ! Density of bulk liquid copper fitted as a function of temperature 
-    ! (rho_cu)liquid = Alcu*(T-1330)^3 + Blcu*(T-1330)^2 + Dlcu*(T-1330) + Clcu, where Alcu = -2.383E-11 kg/m3K3 and Blcu = +8.69E-8 kg/m3K2 and Fcu=-7.96E-04 and Ccu = 7.89 kg/m3 
+    ! (rho_cu)liquid = Alcu*(T-1330)^3 + Blcu*(T-1330)^2 + Dlcu*(T-1330) + Clcu, where Alcu = -2.383E-11 kg/m3K3 and Blcu = +8.69E-8 kg/m3K2 and Dlcu=-7.96E-04 and Ccu = 7.89 kg/m3 
     ! Reference for (rho_cu)liquid: Demin et al. MATHEMATICA MONTISNIGRI (2020), Vol. XLVII:137-151
     ! https://www.montis.pmf.ac.me/allissues/47/Mathematica-Montisnigri-47-12.pdf
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
