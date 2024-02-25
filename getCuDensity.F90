@@ -1,14 +1,14 @@
     !-----------------------------------------------------
     ! material property user defined function for ELMER:
     ! Density of bulk solid copper fitted as a function of temperature
-    ! (rho_cu)solid = Ascu*(T-300)^3 + Bscu*(T-300)^2 + Dscu*(T-300) + Cscu, where Ascu = -2.77E-11 kg/m3K3 and Bscu = -6.12E-8 kg/m3K2 and Dscu=-4.28E-04 kg/m3K and Ccu = 881.0 kg/m3 
+    ! (rho_cu)solid = Ascu*(T-300)^3 + Bscu*(T-300)^2 + Dscu*(T-300) + Cscu, where Ascu = -2.77E-8 kg/m3K3 and Bscu = -6.12E-8 kg/m3K2 and Dscu=-4.28E-01 kg/m3K and Ccu = 8810.0 kg/m3 
     ! Reference for (rho_cu)solid: Demin et al. MATHEMATICA MONTISNIGRI (2020), Vol. XLVII:137-151
     ! Density of gaseous air fitted as a function of temperature
     ! (rho_air)gas = Agas*T^2 + Bgas*T  + Dgas*ln(Egas*T) +Cgas, where Agas = -7.65e-07 kg/m3K2  and  Bgas=  3.16e-03 kg/m3K and Dgas=-1.94 kg/m3 and Egas = 1.0 K-1 and Cgas = 1.14e+01  kg/m3
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     !  Initial porosity (porosity) = 0.45
     ! Density of bulk liquid copper fitted as a function of temperature 
-    ! (rho_cu)liquid = Alcu*(T-1330)^3 + Blcu*(T-1330)^2 + Dlcu*(T-1330) + Clcu, where Alcu = -2.383E-11 kg/m3K3 and Blcu = +8.69E-8 kg/m3K2 and Dlcu=-7.96E-04 and Ccu = 7.89 kg/m3 
+    ! (rho_cu)liquid = Alcu*(T-1330)^3 + Blcu*(T-1330)^2 + Dlcu*(T-1330) + Clcu, where Alcu = -2.383E-8 kg/m3K3 and Blcu = +8.69E-5 kg/m3K2 and Dlcu=-7.96E-01 and Ccu = 7890.0 kg/m3 
     ! Reference for (rho_cu)liquid: Demin et al. MATHEMATICA MONTISNIGRI (2020), Vol. XLVII:137-151
     ! https://www.montis.pmf.ac.me/allissues/47/Mathematica-Montisnigri-47-12.pdf
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
