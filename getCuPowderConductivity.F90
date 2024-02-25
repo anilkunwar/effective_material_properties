@@ -16,7 +16,7 @@
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     !  Initial porosity (porosity) = 0.45
     ! Conductivity of bulk liquid copper fitted as a function of temperature 
-    ! (kth_cu)liquid = Alcu*(T)^2 + Blcu*(T) + Dlcu, where Alcu = 0.00156 W/mK4 and Blcu = -1.252 W/mK3 and Dlcu= 539.728 W/m  (1358.0 < T  K)
+    ! (kth_cu)liquid = Alcu*(T-1358)^2 + Blcu*(T-1358) + Dlcu, where Alcu = 2.51e-6 W/mK4 and Blcu = -1.6e-4 W/mK3 and Dlcu= 165.58 W/m  (1358.0 < T  K)
     ! Reference for (kth_cu)liquid: C.Y. Ho, R. W. Powell and P. E. Liley, Thermal Conductivity of the Elements: A Comprehensive Review,  Journal of Physical and Chemical Reference Data
     ! Volume 3 (1974) 1-756
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
