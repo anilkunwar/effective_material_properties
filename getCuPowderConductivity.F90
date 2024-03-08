@@ -1,7 +1,7 @@
     !-----------------------------------------------------
     ! material property user defined function for ELMER:
     ! Conductivity of bulk solid copper fitted as a function of temperature
-    ! (kth_cu)solid = Ascu*(T-250)^2 + Bscu*(T-250) + Dscu, where Ascu = 0.00004 W/mK4 and Bscu = -0.10639 W/mK2 and Dscu= 405.75697 W/mK (250.0 < T < 1358.0 K)
+    ! (kth_cu)solid = Ascu*(T-250)^2 + Bscu*(T-250) + Dscu, where Ascu = 0.00004 W/mK3 and Bscu = -0.10639 W/mK2 and Dscu= 405.75697 W/mK (250.0 < T < 1358.0 K)
     ! Reference for (kth_cu)solid: C.Y. Ho, R. W. Powell and P. E. Liley, Thermal Conductivity of the Elements: A Comprehensive Review,  Journal of Physical and Chemical Reference Data
     ! Volume 3 (1974) 1-756
     ! Conductivity of gaseous air fitted as a function of temperature
@@ -16,7 +16,7 @@
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     !  Initial porosity (porosity) = 0.45
     ! Conductivity of bulk liquid copper fitted as a function of temperature 
-    ! (kth_cu)liquid = Alcu*(T-1358)^2 + Blcu*(T-1358) + Dlcu, where Alcu = 2.51e-6 W/mK4 and Blcu = -1.6e-4 W/mK3 and Dlcu= 165.58 W/m  (1358.0 < T  K)
+    ! (kth_cu)liquid = Alcu*(T-1358)^2 + Blcu*(T-1358) + Dlcu, where Alcu = 2.51e-6 W/mK3 and Blcu = -1.6e-4 W/mK2 and Dlcu= 165.58 W/mK  (1358.0 < T  K)
     ! Reference for (kth_cu)liquid: C.Y. Ho, R. W. Powell and P. E. Liley, Thermal Conductivity of the Elements: A Comprehensive Review,  Journal of Physical and Chemical Reference Data
     ! Volume 3 (1974) 1-756
     ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
