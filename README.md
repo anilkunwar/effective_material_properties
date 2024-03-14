@@ -6,7 +6,7 @@
 
 # Ti6Al4V ALLOY
 
-The Ti6Al4V material is assumed as a continuum material with zero porosity
+The Ti6Al4V substrate material is assumed as a continuum material with zero porosity throughout the entire duration of the laser processing simulation. 
 
 
 # Cu MATERIAL
