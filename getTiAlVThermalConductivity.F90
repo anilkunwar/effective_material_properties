@@ -5,7 +5,7 @@
     ! (kth_tialv)solid = As*(T)  +  Cs, where As = 1.46E-02 W /mK2 and    Cs = -0.32 W/mK (1400.0 K < T < 1800.0 K)
     ! Reference: Boivineau et al., International Journal of Thermophysics, 27 (2006) 507-529.
     ! https://link.springer.com/article/10.1007/PL00021868
-    ! kth_tialv)liquid = Al*(T) + Cl, where Al = 1.83E-02  W/mK2 and E = -6.66 W/m K (1950.0 K < T < 2700.0 K) 
+    ! (kth_tialv)liquid = Al*(T) + Cl, where Al = 1.83E-02  W/mK2 and E = -6.66 W/m K (1950.0 K < T < 2700.0 K) 
     ! Reference: Boivineau et al., International Journal of Thermophysics, 27 (2006) 507-529.
     ! https://link.springer.com/article/10.1007/PL00021868
     !-----------------------------------------------------
